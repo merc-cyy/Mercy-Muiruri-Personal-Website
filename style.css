@@ -8,7 +8,18 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  background-color: #f2fde5;
+  /* Replace with your desired color */
+
+      /* Adjust the size of the pattern */
+  color: #000000;
+  /* Optional: Set a default text color */
+  font-family: Arial, sans-serif;
+  /* Optional: Set a default font */
+  margin: 0;
+  /* Optional: Remove default margin */
+  padding: 0;
+  /* Optional: Remove default padding */
 }
 
 html {
@@ -16,7 +27,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(0, 0, 0);
 }
 
 /* TRANSITION */
@@ -46,7 +57,7 @@ nav {
 }
 
 a {
-  color: black;
+  color: #812205;
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -109,13 +120,14 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
 
 .menu-links li {
   list-style: none;
+  color:#ffffff;
 }
 
 .menu-links.open {
@@ -187,6 +199,7 @@ section {
 
 .section__text__p1 {
   text-align: center;
+
 }
 
 .section__text__p2 {
@@ -197,6 +210,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  color: #954400
 }
 
 #socials-container {
@@ -232,11 +246,30 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+
+}
+
+.btn-project-skills-container{
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.btn-project-skills{
+  padding: 0.5rem;
+  width: 6rem;
+  font-size: 0.8rem;
+  border: rgb(227, 6, 6);
+  
 }
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: rgb(248, 124, 42) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -247,7 +280,7 @@ section {
 .btn-color-1,
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
-  color: white;
+  color: rgb(244, 127, 73);
 }
 
 .btn-color-1:hover {
@@ -277,7 +310,9 @@ section {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-
+.project-about-container{
+  flex-wrap: wrap;
+}
 .about-details-container {
   justify-content: center;
   flex-direction: column;
@@ -301,7 +336,7 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: #ffffff;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -326,7 +361,7 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color:#812205;
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -427,6 +462,87 @@ article .icon {
   height: 2.5rem;
 }
 
+.skill-underline{
+  text-decoration: underline;
+}
+
+/* Container for the timeline */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  list-style: none;
+  border-left: 2px solid #000000;
+  /* Vertical line */
+}
+
+/* Each timeline item */
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Marker for each timeline item */
+.timeline-marker {
+  position: absolute;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #954400;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px #19180A;
+}
+
+/* Content section of the timeline item */
+.timeline-content {
+  margin-left: 40px;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Date section of the timeline item */
+.timeline-date {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Headings and paragraph in the content section */
+.timeline-content h3 {
+  margin-top: 0;
+  color: #812205;
+}
+
+.timeline-content h4 {
+  margin: 5px 0;
+  color: #555;
+}
+
+.timeline-content p {
+  margin: 10px 0 0;
+  color: #666;
+}
+
+.timeline-content ul {
+  list-style-type: disc;
+  /* Change bullet type (disc, circle, square, etc.) */
+  padding-left: 20px;
+  /* Add padding to the left of the list */
+}
+.timeline-content ul li {
+  margin-bottom: 8px;
+  /* Add margin to the bottom of each list item */
+}
+
+.profile{
+  border-radius: 100px;
+}
 /* FOOTER SECTION */
 
 footer {
