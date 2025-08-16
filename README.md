@@ -1,4 +1,4 @@
-# Personal Portfolio Codebase.
+# Personal Portfolio Codebase
 
 ## Technical Stack
 
